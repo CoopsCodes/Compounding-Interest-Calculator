@@ -1,0 +1,21 @@
+This project is intended to teach me how to build a Compounding interest calculator, in VanillaJS using the DOM model.
+
+There wont be a need for a database as there'll be no storage needed.
+
+MVP is a working calculator that takes and interest rate, ammount and time-frame to calculate total compounding interest.
+Beast Mode will be if i could use an API to pull in interest rates from banks and calculate the best rate of the day.
+Beast Mode ++ would be to create a log in screen and add local storage so people could create profiles and keep track of their savings, no email addresses, just a username and passwords to avoid privacy issues
+
+
+Compounding Interest calculation
+A = P(1 + r/n)nt  **nt after the brackets is to a power**
+using Math.pow i can calculate the power of the principal.
+
+A = Accrued Amount (principal + interest)
+P = Principal Amount
+I = Interest Amount
+R = Annual Nominal Interest Rate in percent
+r = Annual Nominal Interest Rate as a decimal
+r = R/100
+t = Time Involved in years, 0.5 years is calculated as 6 months, etc.
+n = number of compounding periods per unit t; at the END of each period
