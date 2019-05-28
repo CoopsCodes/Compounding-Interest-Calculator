@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
   <title>Interest Calculator</title>
 </head>
 <header>
   <div class="navbar">Here will go the Navbar</div>
 </header>
 <body>
-  <form id="interestCalculator">
-    <div class="form-group">
-      <label for="principal">How much did you want to invest?</label>
-      <input type="text" id="principal" placeholder="$100.00">
-    </div>
-    <div class="form-group">
-      <label for="interestRate" class="interestRate">Interest Rate:</label>
-      <input type="text" id="interestRate" placeholder="0.00%">
-    </div>
-    <div class="form-group">
-      <label for="months" class="months">How many Months would you like to save for?</label>
-      <input type="text" id="months" placeholder="1 year = 12 Months">
-    </div>
-    <div class="form-group">
-      <label for="total" id="totalInterest">Total Interest</label>
-    </div>
-    <button type="submit" value="btn btn-primary">Calculate Interest</button>
-  </form>
-
+  <div class="container">
+    <form class="interestCalculator">
+      <div class="form">
+        <label for="principal">How much did you want to invest?</label>
+        <input type="text" id="principal" placeholder="$100.00">
+      </div>
+      <div class="form">
+        <label for="interestRate" class="interestRate">Interest Rate:</label>
+        <input type="text" id="interestRate" placeholder="0.00%">
+      </div>
+      <div class="form">
+        <label for="months" class="months">How many Months would you like to save for?</label>
+        <input type="text" id="months" placeholder="1 year = 12 Months">
+      </div>
+      <div class="form">
+        <label for="total" id="totalInterest">Total Interest</label>
+      </div>
+      <button type="submit" value="btn btn-primary">Calculate Interest</button>
+    </form>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
