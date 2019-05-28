@@ -1,21 +1,18 @@
-//* A = P(1 + r/n)nt  **nt after the brackets is to a power**
+//* A = P(1 + r/n)^nt  **^nt after the brackets is to a power**
 //! accumulated interest
-accumulatedInterest = (principal, annualRate, nPeriods, nTime) => {
-  total = principal * Math.pow(1 + annualRate / nPeriods, nPeriods * nTime)
-  return total - principal
-}
-
-adjustInterestRate = (interestRate) => {
-  return interestRate / 100
-}
-// console.log(accumulatedInterest(10000.00, adjustInterestRate(3.8), 12, 0.5));
 
 document.querySelector('#interestCalculator').addEventListener('submit', (e) => {
   //* prevents the form submitting the default action.
-  e.preventDefault;
+  e.preventDefault();
 
-  principal = document.querySelector('#principal').value;
-  interestRate = document.querySelector('#interestRate').value;
-  months = document.querySelector('#months').value;
+  const principal = document.querySelector('#principal').value;
+  const interestRate = document.querySelector('#interestRate').value;
+  const monthlyInterestRate = interestRate / 12
+  const months = document.querySelector('#months').value;
+  
 
-})
+  accumulatedInterest = (principal, monthlyInterestRate, months) => {
+    return total = principal * Math.pow(1 + (monthlyInterestRate / 100) / 12, 12 * months);
+  }
+  console.log(accumulatedInterest(principal, monthlyInterestRate, months));
+});
