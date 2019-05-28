@@ -8,7 +8,7 @@
   <title>Interest Calculator</title>
 </head>
 <header>
-  <div class="navbar">Here will go the Navbar</div>
+  <div class="navbar"></div>
 </header>
 <body>
   <div class="container">
@@ -23,12 +23,16 @@
       </div>
       <div class="form">
         <label for="months" class="months">How many Months would you like to save for?</label>
-        <input type="text" id="months" placeholder="1 year = 12 Months">
+        <input type="text" id="months" placeholder="e.g 12 Months">
       </div>
       <div class="form">
         <label for="total" id="totalInterest">Total Interest</label>
       </div>
-      <input type="submit" value="Calculate Interest">
+      <div class="buttonAlign">
+        <input type="submit" value="Calculate Interest">
+        <input type="button" name="clear" value="Clear Results" onclick="clearResults();">
+        <!-- <input type="button" name="clear" value="Clear Form" onclick="clearForm();"> -->
+    </div>
     </form>
   </div>
   <script src="script.js"></script>
